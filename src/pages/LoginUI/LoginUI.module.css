@@ -1,0 +1,143 @@
+:root {
+    --main-color: rgb(77, 243, 193);
+    --secondary-color: #f8f9fa;
+    --third-color: #0b3741;
+  }
+
+.containerInput{
+    color: var(--third-color);
+}
+
+.form{
+    border-color: var(--main-color)!important;
+    border-radius: 25px!important;
+    border: 2px solid var(--main-color)!important;
+    padding: 20px;
+    background-color: var(--secondary-color)!important;
+    background-color: rgba(255, 255, 255, 0.7) !important; 
+}
+
+
+
+.containerForm {
+    animation: slideIn 1s ease-out;
+    /* font-size: 3em; */
+    color: var(--third-color);
+    
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+
+
+.inputGroup input{
+    width: 300px;
+    height: 40px; 
+    
+}
+
+.containerForm{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+    
+}
+
+.containerTitle{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* margin-top: 50px; */
+}
+
+.containerBtn {
+    margin-top: 20px;
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.btnSubmit{
+    background-color: var(--secondary-color) !important;
+    color: rgb(38, 38, 38) !important;
+    border-color: var(--main-color)!important;
+    border-radius: 25px!important;
+    border: 2px solid var(--main-color)!important;
+    font-weight: bold!important;
+    position: relative;
+    overflow: hidden;
+    z-index: 1; 
+}
+
+.btnSubmit::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(210, 255, 241);
+    transition: top 0.3s ease;
+    z-index: -1; 
+}
+
+.btnSubmit:hover::before {
+    content: "";
+    top: 0;
+}
+
+
+input:focus {
+    outline: none!important;
+    border-color: var(--main-color)!important;
+    box-shadow: 0 0 10px rgba(77, 243, 193, 0.5)!important;
+}
+
+input:hover {
+    outline: none!important; 
+    border-color: var(--main-color); 
+    box-shadow: 0 0 10px rgba(77, 243, 193, 0.5);
+    transition: all 0.5s ease;
+}
+
+.containerGoToLogin {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.containerGoToSignUp {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.containerGoToLogin p .containerGoToSignUp p{
+    color: var(--third-color);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--main-color)
+}

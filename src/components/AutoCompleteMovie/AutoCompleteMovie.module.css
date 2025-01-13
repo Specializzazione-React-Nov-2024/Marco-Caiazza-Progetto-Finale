@@ -1,0 +1,40 @@
+:root {
+  --main-color: rgb(77, 243, 193);
+  --secondary-color: #f8f9fa;
+  --third-color: #0b3741;
+}
+
+.containerCardSuggestions {
+  width: 70%;
+  margin-left: 10.5%;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--third-color);
+  border-radius: 8px;
+}
+
+.cardSuggestions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.4s ease;
+  background-color: #e8e8e8;
+  border-radius: 8px;
+}
+
+.cardSuggestions:hover {
+  background-color: var(--main-color);
+  border-radius: 8px;
+}
+
+.cardSuggestions p {
+  margin-top: 15px;
+}
+
+.cardSuggestions img {
+  width: 30px;
+  height: auto;
+  margin-left: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+}

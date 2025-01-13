@@ -1,0 +1,193 @@
+:root {
+  --main-color: rgb(77, 243, 193);
+  --secondary-color: #f8f9fa;
+  --third-color: #0b3741;
+}
+
+.containerCustom h3 {
+  padding-top: 7px;
+}
+
+.navbar {
+  width: 100%;
+  z-index: 1;
+}
+
+.containerBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.btnUser {
+  background-color: var(--secondary-color) !important;
+  color: rgb(38, 38, 38) !important;
+  border-color: var(--main-color) !important;
+  border-radius: 25px !important;
+  border: 2px solid var(--main-color) !important;
+  font-weight: bold !important;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btnUser::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(210, 255, 241);
+  transition: top 0.3s ease;
+  z-index: -1;
+}
+
+.btnUser:hover::before {
+  content: "";
+  top: 0;
+}
+
+.inputCustom:focus {
+  outline: none !important;
+  border-color: var(--main-color) !important;
+  box-shadow: 0 0 10px rgba(77, 243, 193, 0.5) !important;
+}
+
+.inputCustom:hover {
+  outline: none !important;
+  border-color: var(--main-color);
+  box-shadow: 0 0 10px rgba(77, 243, 193, 0.5);
+  transition: all 0.5s ease;
+}
+
+.inputBtn {
+  outline: none !important;
+  border-color: rgb(202, 202, 202) !important;
+  background-color: var(--secondary-color) !important;
+}
+
+.inputBtn:hover {
+  outline: none !important;
+  border-color: var(--main-color) !important;
+  box-shadow: 0 0 10px rgba(77, 243, 193, 0.5) !important;
+  transition: all 0.7s ease !important;
+}
+
+.logo {
+  width: 5%;
+  height: 5%;
+}
+
+.linkBestmovies {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--main-color);
+  position: relative;
+  display: inline-block;
+}
+
+.linkBestmovies::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  /* border-radius: 10px; */
+  background-color: var(--main-color);
+  transition: width 0.3s ease-in-out;
+}
+
+.linkBestmovies:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .containerCustom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Container.containerBtn {
+    margin-top: 10px;
+    background-color: black;
+  }
+
+  .containerBtn {
+    margin-top: 10px;
+    gap: 20px;
+  }
+}
+
+.autoCompleteContainer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  */
+}
+
+.navbar {
+  position: relative;
+  z-index: 10;
+}
+
+.inputGroupCustom img {
+  width: 90%;
+}
+
+.containerBtnProfile {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding-bottom: 20px;
+}
+
+.customDropdownTitle {
+  color: var(--third-color);
+  font-weight: bold;
+}
+
+.navbarDropdown a {
+  color: var(--third-color) !important;
+}
+
+.navbarDropdown a:hover {
+  color: var(--main-color) !important;
+}
+
+.navbarDropdown {
+  margin-top: 20px;
+  border-radius: 10px !important;
+  border: 2px solid var(--main-color) !important;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  background-color: var(--secondary-color);
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 30px;
+  /* overflow: hidden; */
+}
+
+.navbarDropdown::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(210, 255, 241);
+  transition: top 0.3s ease;
+  z-index: -1;
+  border-radius: 5px !important;
+}
+
+.navbarDropdown:hover::before {
+  content: "";
+  top: 0;
+}

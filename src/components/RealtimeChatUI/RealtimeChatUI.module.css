@@ -1,0 +1,161 @@
+/* Container principale */
+:root {
+  --main-color: rgb(77, 243, 193);
+  --secondary-color: #f8f9fa;
+  --third-color: #0b3741;
+}
+
+.containerAllChat {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #717171;
+  border-radius: 5px;
+  /* height: 500px; */
+  max-height: 250px;
+  position: relative;
+  padding: 10px;
+  background-color: rgba(133, 133, 133, 0.3);
+  width: 400px;
+  /* overflow: hidden;  */
+}
+.containerAllChat h4 {
+  padding-left: 1px;
+}
+
+/* Container dei messaggi */
+.containerChat {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Messaggio */
+.articleChat {
+  margin-bottom: 10px;
+  padding: 8px;
+  /* background-color: rgba(133, 133, 133); */
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.usernameDataChat {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--main-color);
+}
+
+.usernameChat {
+  font-weight: bold;
+}
+
+.containerMessageChat {
+  margin-top: 5px;
+  font-size: 16px;
+  color: var(--secondary-color);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.containerMessageSubmit fieldset {
+  display: flex;
+}
+
+.containerMessageSubmit input[type="text"] {
+  width: 100%;
+  background-color: var(--secondary-color) !important;
+  color: rgb(38, 38, 38) !important;
+  border-color: var(--main-color) !important;
+  border-radius: 25px !important;
+  border: 2px solid var(--main-color) !important;
+  font-weight: bold !important;
+  position: relative !important;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.containerMessageSubmit input::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(210, 255, 241);
+  transition: top 0.3s ease;
+  z-index: -1;
+}
+
+.containerMessageSubmit input:hover::before {
+  content: "";
+  top: 0;
+}
+
+.containerMessageSubmit input[type="submit"] {
+  background-color: var(--secondary-color) !important;
+  color: rgb(38, 38, 38) !important;
+  border-color: var(--main-color) !important;
+  border-radius: 25px !important;
+  border: 2px solid var(--main-color) !important;
+  font-weight: bold !important;
+  position: relative !important;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.containerMessageSubmit input::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(210, 255, 241);
+  transition: top 0.3s ease;
+  z-index: -1;
+}
+
+.containerMessageSubmit input:hover::before {
+  content: "";
+  top: 0;
+}
+
+fieldset p {
+    margin-left: 3px;
+}
+
+
+
+.messageLogin{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--main-color);
+    position: relative;
+    display: inline-block;
+}
+
+.messageLogin::after {
+    content: ''; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%; 
+    /* border-radius: 10px; */
+    background-color: var(--main-color); 
+    transition: width 0.3s ease-in-out; 
+    
+}
+
+.messageLogin:hover::after {
+    width: 100%; 
+}
+

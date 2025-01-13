@@ -1,0 +1,51 @@
+:root {
+  --main-color: rgb(77, 243, 193);
+  --secondary-color: #f8f9fa;
+  --third-color: #0b3741;
+}
+
+.containerSidebar {
+  height: 100px;
+  padding-left: 15px;
+}
+
+.sidebarDropdown a {
+  color: var(--third-color) !important;
+}
+
+.sidebarDropdown a:hover {
+  color: var(--main-color) !important;
+}
+
+.sidebarDropdown {
+  margin-top: 20px;
+  border-radius: 10px !important;
+  border: 2px solid var(--main-color) !important;
+  position: relative;
+  z-index: 1;
+  background-color: var(--secondary-color);
+}
+
+.sidebarDropdown::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(210, 255, 241);
+  transition: top 0.3s ease;
+  z-index: -1;
+  border-radius: 5px !important;
+}
+
+.sidebarDropdown:hover::before {
+  content: "";
+  top: 0;
+}
+
+.customDropdownTitle {
+  color: var(--third-color);
+  font-weight: bold;
+  z-index: 1;
+}

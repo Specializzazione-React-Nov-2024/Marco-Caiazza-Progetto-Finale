@@ -1,0 +1,86 @@
+
+:root {
+    --main-color: rgb(77, 243, 193);
+    --secondary-color: #f8f9fa;
+    --third-color: #0b3741;
+  }
+
+  .containerAllForm{
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+.containerForm {
+    border-radius: 25px!important;
+    border: 2px solid var(--main-color)!important;
+    padding: 20px;
+    background-color: var(--secondary-color)!important;
+    background-color: rgba(255, 255, 255, 0.7) !important; 
+}
+
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: var(--third-color);
+}
+
+.inputGroup label {
+    margin-top: 10px;
+    margin-left: 5px;
+    /* color: var(--main-color); */
+}
+
+.inputGroup input{
+    width: 300px;
+    height: 40px; 
+}
+
+.containerBtn{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+
+.btnUpdate{
+    background-color: var(--secondary-color) !important;
+    color: rgb(38, 38, 38) !important;
+    border-color: var(--main-color)!important;
+    border-radius: 25px!important;
+    border: 2px solid var(--main-color)!important;
+    font-weight: bold!important;
+    position: relative;
+    overflow: hidden;
+    z-index: 1; 
+}
+
+.btnUpdate::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(210, 255, 241);
+    transition: top 0.3s ease;
+    z-index: -1; 
+}
+
+.btnUpdate:hover::before {
+    content: "";
+    top: 0;
+}

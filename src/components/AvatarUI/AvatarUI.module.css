@@ -1,0 +1,44 @@
+:root {
+  --main-color: rgb(77, 243, 193);
+  --secondary-color: #f8f9fa;
+  --third-color: #0b3741;
+}
+
+.customAvatar label {
+  margin-left: 30%;
+  margin-top: 20px;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 3px;
+  border-color: var(--main-color);
+}
+
+.customAvatar label {
+  background-color: var(--secondary-color) !important;
+  color: rgb(38, 38, 38) !important;
+  border-color: var(--main-color) !important;
+  border-radius: 25px !important;
+  border: 1px solid var(--main-color) !important;
+  font-weight: bold !important;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 5px;
+}
+
+.customAvatar label::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(210, 255, 241);
+  transition: top 0.3s ease;
+  z-index: -1;
+}
+
+.customAvatar label:hover::before {
+  content: "";
+  top: 0;
+}
