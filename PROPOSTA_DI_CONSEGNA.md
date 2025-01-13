@@ -43,4 +43,4 @@ Ho utilizzato Bootstrap CSS per garantire un design elegante e responsive.
    - Gestione sessione
 
 ## Deployment
-L'applicazione non è ancora stata pubblicata.
+bestmovies-marco-caiazza.vercel.app
